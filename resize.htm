@@ -1,1 +1,28 @@
-Hello
+	<head>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script type="text/javascript" src="//sslstatic.wix.com/services/js-sdk/1.33.0/js/Wix.js"></script>
+	</head>
+	
+	<script>
+		$('#resize').change(function(){ 
+        var combo_value = $( "#resize " ).val();
+        Wix.resizeWindow(combo_value,combo_value);
+    });
+	</script>
+	
+	<body style="backgroundcolor: red">
+		<p style="font-size: 45px; font-family: Helvetica" ><strong> TPA sample </strong></p>
+		
+		<p style="font-size: 20px; font-family: Helvetica">	By Natalie Almagor	</p>
+		
+		<p style="font-size: 30px; font-family: Helvetica">	Select a number from the combobox	</p>
+		
+    	<select id="resize" name="resize" onchange="height"(this.id)>
+			<option value=""></option>
+            <option value="200">200</option>
+            <option value="300">300</option>
+            <option value="400">400</option>
+            <option value="500">500</option>
+		</select>
+	      
+	</body>
