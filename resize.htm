@@ -5,12 +5,24 @@
 	
 	<script>
 		$('#resize').change(function(){ 
-        var combo_value = $( "#resize " ).val();
-        Wix.resizeWindow(combo_value,combo_value);
+        var combo_value = $( "#200 " ).val();
+        Wix.resizeWindow(200,200);
+		
+		$('#resize').change(function(){ 
+        var combo_value = $( "#300 " ).val();
+        Wix.resizeWindow(200,300);
+		
+		$('#resize').change(function(){ 
+        var combo_value = $( "#400 " ).val();
+        Wix.resizeWindow(200,400);
+		
+		$('#resize').change(function(){ 
+        var combo_value = $( "#500 " ).val();
+        Wix.resizeWindow(200,500);
     });
 	</script>
 	
-	<body style="backgroundcolor: red">
+	<body style="background-color: red">
 		<p style="font-size: 45px; font-family: Helvetica" ><strong> TPA sample </strong></p>
 		
 		<p style="font-size: 20px; font-family: Helvetica">	By Natalie Almagor	</p>
