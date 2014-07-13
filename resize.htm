@@ -10,8 +10,11 @@
 				$('#resize').change(function(){ 
 		        	var combo_value = $("#resize").val();
 		        	Wix.resizeWindow(450,combo_value);
+					alert('your app now has a new height');
 			    	});
 			}
+				// adding alert event after iframe size change
+				
 			$( document ).ready(initializeApp);
 			
 		</script>
