@@ -1,38 +1,30 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script type="text/javascript" src="//sslstatic.wix.com/services/js-sdk/1.33.0/js/Wix.js"></script>
-		
-	<script>
-	function initializeApp()
-	{
-		
-		alert('yaniv');
-	}
-	$( document ).ready(initializeApp);
-	/*$('#resize').change(function(){ 
-        var combo_value = $("#resize").val();
-        Wix.resizeWindow(300,300);
-        alert('hallo');
-	    });*/
-	</script>
+		<script type="text/javascript" >
+			// initialize the app when the DOM is ready
+			function initializeApp(){
+				// adding change event to the dropdown - resize app iframe to the dropdown value
+				$('#resize').change(function(){ 
+		        	var combo_value = $("#resize").val();
+		        	Wix.resizeWindow(450,combo_value);
+			    	});
+			}
+			$( document ).ready(initializeApp);
+			
+		</script>
 	</head>
-	
 	<body style="background-color: red">
 		<p style="font-size: 25px; font-family: Helvetica" ><strong> TPA sample </strong></p>
-		
 		<p style="font-size: 15px; font-family: Helvetica">	By Natalie Almagor	</p>
-		
 		<p style="font-size: 20px; font-family: Helvetica">	Select a number from the combobox	</p>
-		
-    	<select id="resize">
-            <option value="200">200</option>
-            <option value="300">300</option>
-            <option value="400">400</option>
-            <option value="500">500</option>
+	    	<select id="resize">
+	            <option selected="selected" value="200">200</option>
+	            <option value="300">300</option>
+	            <option value="400">400</option>
+	            <option value="500">500</option>
 		</select>
-	      
 	</body>
-	
 </html>
